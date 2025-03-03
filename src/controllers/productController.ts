@@ -1,6 +1,6 @@
 import {Request, Response} from 'express';
 import { productModel } from '../models/productModel';
-import {connectToDatabase, disconnectFromDatabase} from '../Repository/database';
+import {connectToDatabase, disconnectFromDatabase} from '../repository/database';
 
 // (CRUD)
 /**

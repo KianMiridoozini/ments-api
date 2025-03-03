@@ -9,7 +9,7 @@ import { userModel } from "../models/userModel";
 import {
   connectToDatabase,
   disconnectFromDatabase,
-} from "../Repository/database";
+} from "../repository/database";
 
 /**
  * Register a new user

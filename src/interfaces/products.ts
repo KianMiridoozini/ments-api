@@ -11,3 +11,4 @@ export interface Product extends Document {
     isHidden: boolean;
     _createdBy: User['id'];
 }
+
