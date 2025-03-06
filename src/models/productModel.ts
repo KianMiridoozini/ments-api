@@ -5,7 +5,7 @@ import { ref } from 'joi/lib';
 const productSchema = new Schema<Product>({
     name: { type: String, required: true, min: 6, max: 255 },
     description: { type: String, required: true, min: 6, max: 255 },
-    imageUrl: { type: String, required: true, min: 6, max: 255 },
+    imageURL: { type: String, required: true, min: 6, max: 255 },
     price: { type: Number, required: true },
     stock: { type: Number, required: true },
     isOndiscount: { type: Boolean, required: true, default: false },

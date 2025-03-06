@@ -3,7 +3,7 @@ import { User } from "./user";
 export interface Product extends Document {
     name: string;
     description: string;
-    imageUrl: string;
+    imageURL: string;
     price: number;
     stock: number;
     isOndiscount: boolean;
