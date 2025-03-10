@@ -121,7 +121,7 @@ export function verifyToken(req: Request, res: Response, next: NextFunction): vo
     jwt.verify(token, process.env.TOKEN_SECRET as string);
     next();
 
-  } catch (error) {
+  } catch (tokenError) {
     res.status(401).json({ error: "Invalid token." });
   }
 }

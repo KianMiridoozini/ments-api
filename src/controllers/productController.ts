@@ -16,7 +16,7 @@ export async function createProduct(req: Request, res: Response): Promise<void> 
         await connectToDatabase();
 
         const product = new productModel(data);
-        const result = await product.save();
+        await product.save();
 
         res.status(201).send(product);
 

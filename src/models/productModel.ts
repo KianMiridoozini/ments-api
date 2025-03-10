@@ -1,6 +1,5 @@
 import { Schema, model } from 'mongoose';
 import { Product } from '../interfaces/products';
-import { ref } from 'joi/lib';
 
 const productSchema = new Schema<Product>({
     name: { type: String, required: true, min: 6, max: 255 },
