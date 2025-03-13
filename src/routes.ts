@@ -28,7 +28,7 @@ const router: Router = Router();
  */
 router.get('/', (req: Request, res: Response) => {
     // connect
-    res.status(200).send('Welcome to the API');
+    res.status(200).send({message: 'Welcome to the API'});
     // disconnect
 });
 

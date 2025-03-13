@@ -19,7 +19,7 @@ export async function connectToDatabase() {
 
     if (mongoose.connection.db) {
       await mongoose.connection.db.admin().command({ ping: 1 });
-      console.log("Database connection established");
+     // console.log("Database connection established");
     } else {
       throw new Error("Database connection is not established");
     }
@@ -30,7 +30,7 @@ export async function connectToDatabase() {
 export async function disconnectFromDatabase() {
   try {
     await mongoose.disconnect();
-    console.log("Database connection closed");
+   // console.log("Database connection closed");
   } catch (error) {
     console.error("Error disconnecting from the database: " + error);
   }
